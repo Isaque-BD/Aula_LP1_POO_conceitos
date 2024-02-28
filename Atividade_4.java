@@ -3,7 +3,7 @@ public class Atividade_4{
     public static void main(String[] args){
         
     int jan = 15000;
-    int fev = 2300;
+    int fev = 23000;
     int marc = 17000;
     int sum = jan + fev + marc;
     float media = (jan + fev + marc) / 2;
