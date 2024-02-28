@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class Atividade_5 {
 
-    public static void main(String[] args){
-
-        Scanner nota = new Scanner(System.in);
 
         public static void main(String[] args){
 
