@@ -6,7 +6,7 @@ public class Atividade_4{
     int fev = 23000;
     int marc = 17000;
     int sum = jan + fev + marc;
-    float media = (jan + fev + marc) / 2;
+    float media = (jan + fev + marc) / 3;
 
     System.out.println("A empresa teve um total de despesa de: R$" + sum);
     System.out.println("Média de gastos de: R$" + media);
