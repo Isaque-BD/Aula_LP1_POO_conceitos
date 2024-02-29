@@ -12,11 +12,11 @@ public class Atividade3 {
 
         if(salario < reajuste){
 
-            float p = ((reajuste/salario));
+            float p = (reajuste/salario) * 100;
 
             System.out.println("Seu salário teve um aumento de: " + p + "%");
         }else{
-            float p = (reajuste/salario);
+            float p = (reajuste/salario) * 100;
             System.out.println("Seu salário teve uma diminuição de: " + p + "%");
         }
 
