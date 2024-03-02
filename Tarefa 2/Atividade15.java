@@ -11,26 +11,16 @@ public class Atividade15 {
         System.out.print("Digite o salário por hora trabalhada: ");
         float s = h.nextFloat();
 
-        
-
-        if(m > 160){
+        if (m > 160) {
 
             int hExtra = m - 160;
-            float sExtra = 0;
-            float soma = 0;
-            
-            for(int i = 0; i < hExtra; i++){
+            float sExtra = (100 * 1.5f) * hExtra;
 
-                soma = s * 1.5f;
-                sExtra = sExtra + soma;
-
-            }
             System.out.println("O salário total vai ser de:  R$" + (sExtra + (160 * s)));
 
-        }else{
+        } else {
             System.out.println("O salário total vai ser de: R$" + (m * s));
         }
-
 
     }
 
