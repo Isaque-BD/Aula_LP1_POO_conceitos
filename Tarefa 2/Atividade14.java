@@ -13,7 +13,7 @@ public class Atividade14 {
 
         int duracao = calcularDuracaoJogo(horaInicio, horaFim);
 
-        System.out.println("A duração do jogo é de " + duracao + " horas.");
+        System.out.println("A duração do jogo foi de " + duracao + " horas.");
 
         scanner.close();
     }
