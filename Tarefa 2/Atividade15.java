@@ -14,7 +14,7 @@ public class Atividade15 {
         if (m > 160) {
 
             int hExtra = m - 160;
-            float sExtra = (100 * 1.5f) * hExtra;
+            float sExtra = (s * 1.5f) * hExtra;
 
             System.out.println("O salário total vai ser de:  R$" + (sExtra + (160 * s)));
 
