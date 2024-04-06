@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PcCompleto">
+   <children>
+      <Label alignment="CENTER" layoutX="38.0" layoutY="56.0" prefHeight="17.0" prefWidth="72.0" text="Mouse:" />
+      <TextField fx:id="txtMouse" alignment="CENTER" layoutX="123.0" layoutY="52.0" />
+      <TextField fx:id="txtTeclado" alignment="CENTER" layoutX="123.0" layoutY="85.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="89.0" prefHeight="17.0" prefWidth="72.0" text="Teclado:" />
+      <TextField fx:id="txtMonitor" alignment="CENTER" layoutX="123.0" layoutY="117.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="121.0" prefHeight="17.0" prefWidth="72.0" text="Monitor:" />
+      <TextField fx:id="txtHeadset" alignment="CENTER" layoutX="123.0" layoutY="149.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="153.0" prefHeight="17.0" prefWidth="72.0" text="Headset:" />
+      <TextField fx:id="txtGabinete" alignment="CENTER" layoutX="123.0" layoutY="183.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="187.0" prefHeight="17.0" prefWidth="72.0" text="Gabinete:" />
+      <Label alignment="CENTER" layoutX="395.0" layoutY="187.0" prefHeight="17.0" prefWidth="72.0" text="SSD:" />
+      <TextField fx:id="txtSSD" alignment="CENTER" layoutX="480.0" layoutY="183.0" />
+      <Label alignment="CENTER" layoutX="395.0" layoutY="153.0" prefHeight="17.0" prefWidth="72.0" text="Fonte:" />
+      <TextField fx:id="txtFonte" alignment="CENTER" layoutX="480.0" layoutY="149.0" />
+      <Label alignment="CENTER" layoutX="383.0" layoutY="121.0" prefHeight="17.0" prefWidth="84.0" text="Memoria Ram" />
+      <TextField fx:id="txtRam" alignment="CENTER" layoutX="480.0" layoutY="117.0" />
+      <Label alignment="CENTER" layoutX="395.0" layoutY="89.0" prefHeight="17.0" prefWidth="72.0" text="Placa Mãe:" />
+      <TextField fx:id="txtPlacaMae" alignment="CENTER" layoutX="480.0" layoutY="85.0" />
+      <TextField fx:id="txtProcessador" alignment="CENTER" layoutX="480.0" layoutY="52.0" />
+      <Label alignment="CENTER" layoutX="395.0" layoutY="56.0" prefHeight="17.0" prefWidth="72.0" text="Processador" />
+      <Button fx:id="btnMontarPc" layoutX="144.0" layoutY="309.0" mnemonicParsing="false" onAction="#MontarPc" prefHeight="54.0" prefWidth="108.0" text="Montar PC" />
+      <Button fx:id="btnComprar" layoutX="144.0" layoutY="233.0" mnemonicParsing="false" onAction="#ComprarAsPecas" prefHeight="54.0" prefWidth="108.0" text="Comprar" />
+      <Label layoutX="170.0" layoutY="14.0" text="Periféricos" />
+      <Label layoutX="494.0" layoutY="14.0" text="Componentes Internos" />
+      <ImageView fitHeight="173.0" fitWidth="155.0" layoutX="314.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pc.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
