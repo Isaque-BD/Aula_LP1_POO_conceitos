@@ -13,7 +13,7 @@ public class Caneta {
     
     
     
-    public void Desenhar(){
+    public void desenhar(){
         if(tampa && tinta){
             System.out.println("Desenhando");
 
@@ -26,7 +26,7 @@ public class Caneta {
 
 
 
-    public void Rabiscar(){
+    public void rabiscar(){
         if(tampa && tinta){
             System.out.println("Rabiscando");
         }else{
@@ -34,7 +34,7 @@ public class Caneta {
         }
     }
 
-    public void Escrever(){
+    public void escrever(){
 
         if(tampa && tinta){
             System.out.println("Escrevendo");
