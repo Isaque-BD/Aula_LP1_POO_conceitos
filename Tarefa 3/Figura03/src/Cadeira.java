@@ -4,13 +4,13 @@ public class Cadeira {
     private String tipo;
     private boolean ergonomico;
 
-    public void AjustarCad(){
+    public void ajustarCad(){
         System.out.println("Cadeira ajustada");
     }
-    public void Sentar(){
+    public void sentar(){
         System.out.println("Sentado com sucesso");
     }
-    public void GirarCadeira(){
+    public void girarCadeira(){
         
         System.out.println("Girando a cadeira");
     }
