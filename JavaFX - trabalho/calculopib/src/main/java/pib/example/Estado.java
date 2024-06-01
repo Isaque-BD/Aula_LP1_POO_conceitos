@@ -28,7 +28,4 @@ public class Estado extends DadosPadroes {
 
     
     
-    
-
-    
 }

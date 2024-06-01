@@ -23,6 +23,8 @@ public class Pais extends DadosPadroes{
         
         System.out.println((this.qtdEstados * this.getQtdPessoas() * this.getRendimento() * 12)/12);
     }
+
+
     
 
     

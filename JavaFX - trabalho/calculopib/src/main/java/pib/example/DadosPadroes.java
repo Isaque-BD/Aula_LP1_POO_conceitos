@@ -40,15 +40,6 @@ public class DadosPadroes {
         
         System.out.println((this.qtdPessoas * rendimento * 12)/12); //o número 12 significa que são dozes meses e iremos fazer uma média a partir disso
     }
-
-    
-
-    
-
-
-
-    
-
     
     
 }

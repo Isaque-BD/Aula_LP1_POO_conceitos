@@ -1,51 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1019.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pib.example.CalcularPIB">
-   <children>
-      <Label layoutX="160.0" layoutY="48.0" prefHeight="17.0" prefWidth="103.0" text="Cidade">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="813.0" layoutY="48.0" prefHeight="17.0" prefWidth="103.0" text="País">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="477.0" layoutY="48.0" prefHeight="17.0" prefWidth="103.0" text="Estado">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="27.0" layoutY="215.0" prefHeight="17.0" prefWidth="115.0" text="Nome da Cidade" />
-      <TextField fx:id="txtCidade" layoutX="160.0" layoutY="211.0" />
-      <TextField fx:id="txtQtdPessoasCidade" layoutX="160.0" layoutY="245.0" />
-      <Label layoutX="27.0" layoutY="249.0" text="Quantidade de pessoas" />
-      <Button fx:id="btnPIBCidade" layoutX="137.0" layoutY="446.0" mnemonicParsing="false" onAction="#calcularCidade" prefHeight="69.0" prefWidth="149.0" text="Calcular PIB (Cidade)" />
-      <TextField fx:id="txtRendimentoCidade" layoutX="160.0" layoutY="279.0" />
-      <Label layoutX="10.0" layoutY="283.0" prefHeight="17.0" prefWidth="149.0" text="Média Rendimento Mensal" />
-      <TextField fx:id="txtEstado" layoutX="469.0" layoutY="211.0" />
-      <Label layoutX="336.0" layoutY="215.0" prefHeight="17.0" prefWidth="115.0" text="Nome do Estado" />
-      <Label layoutX="336.0" layoutY="249.0" prefHeight="17.0" prefWidth="133.0" text="Quantidade de Cidades" />
-      <TextField fx:id="txtQtdCidade" layoutX="469.0" layoutY="245.0" />
-      <TextField fx:id="txtQtdPessoasEstado" layoutX="469.0" layoutY="282.0" />
-      <Label contentDisplay="CENTER" layoutX="336.0" layoutY="270.0" prefHeight="49.0" prefWidth="133.0" text="Média de pessoas por Cidade" wrapText="true" />
-      <TextField fx:id="txtRendimentoEstado" layoutX="470.0" layoutY="319.0" />
-      <Label layoutX="312.0" layoutY="323.0" prefHeight="17.0" prefWidth="149.0" text="Média Rendimento Mensal" />
-      <Button fx:id="btnPIBEstado" layoutX="461.0" layoutY="446.0" mnemonicParsing="false" onAction="#calcularEstado" prefHeight="69.0" prefWidth="149.0" text="Calcular PIB (Estado)" />
-      <Button fx:id="btnPIBPais" layoutX="790.0" layoutY="446.0" mnemonicParsing="false" onAction="#calcularPais" prefHeight="69.0" prefWidth="149.0" text="Calcular PIB (País)" />
-      <Label layoutX="644.0" layoutY="319.0" prefHeight="17.0" prefWidth="149.0" text="Média Rendimento Mensal" />
-      <TextField fx:id="txtRendimentoPais" layoutX="802.0" layoutY="315.0" />
-      <TextField fx:id="txtQtdEstados" layoutX="802.0" layoutY="247.0" />
-      <Label layoutX="669.0" layoutY="251.0" prefHeight="17.0" prefWidth="124.0" text="Quantidade de Estados" />
-      <Label layoutX="669.0" layoutY="217.0" prefHeight="17.0" prefWidth="115.0" text="Nome país" />
-      <TextField fx:id="txtPais" layoutX="802.0" layoutY="213.0" />
-      <Label layoutX="640.0" layoutY="283.0" prefHeight="17.0" prefWidth="157.0" text="Média de pessoas por Estado" />
-      <TextField fx:id="txtQtdPessoasPais" layoutX="802.0" layoutY="279.0" />
-   </children>
-</AnchorPane>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="991.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pib.example.CalcularPIB">
+  <tabs>
+    <Tab text="Adicionar">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="820.0">
+               <children>
+                  <Label layoutX="206.0" layoutY="22.0" prefHeight="30.0" prefWidth="63.0" text="Cidade">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="529.0" layoutY="22.0" prefHeight="30.0" prefWidth="61.0" text="Estado">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="872.0" layoutY="22.0" prefHeight="30.0" prefWidth="44.0" text="País">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCidade" layoutX="162.0" layoutY="100.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="14.0" layoutY="100.0" prefHeight="25.0" prefWidth="151.0" text="Nome da Cidade" />
+                  <Label layoutX="14.0" layoutY="135.0" prefHeight="25.0" prefWidth="151.0" text="Qtd. Pessoas" />
+                  <TextField fx:id="txtQtdPessoasCidade" layoutX="162.0" layoutY="135.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="14.0" layoutY="170.0" prefHeight="25.0" prefWidth="151.0" text="Média Rendimento Mensal" />
+                  <TextField fx:id="txtRendimentoCidade" layoutX="162.0" layoutY="170.0" prefHeight="25.0" prefWidth="151.0" />
+                  <TextField fx:id="txtQtdPessoasEstado" layoutX="484.0" layoutY="170.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="322.0" layoutY="170.0" prefHeight="25.0" prefWidth="160.0" text="Média de Pessoas por Cidade" />
+                  <TextField fx:id="txtQtdCidade" layoutX="484.0" layoutY="135.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="322.0" layoutY="135.0" prefHeight="25.0" prefWidth="151.0" text="Qtd. de Cidade" />
+                  <Label layoutX="322.0" layoutY="100.0" prefHeight="25.0" prefWidth="151.0" text="Nome do Estado" />
+                  <TextField fx:id="txtEstado" layoutX="484.0" layoutY="100.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="321.0" layoutY="205.0" prefHeight="25.0" prefWidth="162.0" text="Média Rendimento Mensal" />
+                  <TextField fx:id="txtRendimentoEstado" layoutX="484.0" layoutY="205.0" prefHeight="25.0" prefWidth="151.0" />
+                  <TextField fx:id="txtRendimentoPais" layoutX="818.0" layoutY="200.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="655.0" layoutY="200.0" prefHeight="25.0" prefWidth="162.0" text="Média Rendimento Mensal" />
+                  <TextField fx:id="txtPais" layoutX="818.0" layoutY="95.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="656.0" layoutY="95.0" prefHeight="25.0" prefWidth="151.0" text="Nome do País" />
+                  <Label layoutX="656.0" layoutY="130.0" prefHeight="25.0" prefWidth="151.0" text="Qtd. de Estados" />
+                  <TextField fx:id="txtQtdEstados" layoutX="818.0" layoutY="130.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Label layoutX="656.0" layoutY="165.0" prefHeight="25.0" prefWidth="160.0" text="Média de Pessoas por Estado" />
+                  <TextField fx:id="txtQtdPessoasPais" layoutX="818.0" layoutY="165.0" prefHeight="25.0" prefWidth="151.0" />
+                  <Button fx:id="btnPIBCidade" layoutX="171.0" layoutY="295.0" mnemonicParsing="false" onAction="#calcularCidade" prefHeight="45.0" prefWidth="135.0" text="Calcular PIB (Cidade)" />
+                  <Button fx:id="btnPIBEstado" layoutX="493.0" layoutY="295.0" mnemonicParsing="false" onAction="#calcularEstado" prefHeight="45.0" prefWidth="135.0" text="Calcular PIB (Estado" />
+                  <Button fx:id="btnPIBPais" layoutX="826.0" layoutY="295.0" mnemonicParsing="false" onAction="#calcularPais" prefHeight="45.0" prefWidth="135.0" text="Calcular PIB (Pais)" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Cidade">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tblCidade" prefHeight="367.0" prefWidth="533.0">
+                    <columns>
+                      <TableColumn fx:id="idCidade" prefWidth="127.0" text="Nome da Cidade" />
+                      <TableColumn fx:id="idQtdPessoas" prefWidth="120.0" text="Qtd. Pessoas" />
+                        <TableColumn fx:id="idMediaMensal" prefWidth="106.0" text="Média Mensal" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="533.0" mnemonicParsing="false" onAction="#Atualizar" prefHeight="57.0" prefWidth="101.0" text="Atualizar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="533.0" layoutY="80.0" mnemonicParsing="false" onAction="#Deletar" prefHeight="57.0" prefWidth="101.0" text="Deletar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
