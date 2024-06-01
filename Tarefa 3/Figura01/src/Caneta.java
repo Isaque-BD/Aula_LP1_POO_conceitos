@@ -13,8 +13,8 @@ public class Caneta {
     
     
     
-    public void Desenhar(){
-        if(tampa){
+    public void desenhar(){
+        if(tampa && tinta){
             System.out.println("Desenhando");
 
         }
@@ -26,17 +26,17 @@ public class Caneta {
 
 
 
-    public void Rabiscar(){
-        if(tampa){
+    public void rabiscar(){
+        if(tampa && tinta){
             System.out.println("Rabiscando");
         }else{
             System.out.println("Não é possível rabiscar, pois a caneta está tampada");
         }
     }
 
-    public void Escrever(){
+    public void escrever(){
 
-        if(tampa){
+        if(tampa && tinta){
             System.out.println("Escrevendo");
         }
         else{
